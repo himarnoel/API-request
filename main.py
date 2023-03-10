@@ -12,4 +12,4 @@ for product_row in range(2, product_list.max_row+1):
         current_num_products = products_per_supplier[supplier_name]
         products_per_supplier[supplier_name] = current_num_products+1
     else:
-        
+        products_per_supplier[supplier_name] = 1
