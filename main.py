@@ -29,9 +29,11 @@ for product_row in range(2, product_list.max_row+1):
         total_value_per_supplier[supplier_name] = inventory*price
 
 # print(total_value_per_supplier)
+    
 # print(products_per_supplier)
+    
+# Logic products with inventory
 
-    # Logic products with inventory
     if inventory < 10:
         product_under_10_inv[int(product_num)] = int(inventory)
 
@@ -41,3 +43,4 @@ print(products_per_supplier)
 print(total_value_per_supplier)
 print(product_under_10_inv)
 inv_file.save("Inventory_with_total_value.xlsx ")
+
